@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanie iPhony</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <a class="navbar-brand" href="#"><img src="logo1.png" alt="Apple logo" class="float-start" height="30px" width="ml-auto"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">iPhone 15</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">iPhone 14</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">iPhone 13</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">iPhone 12</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section5">Więcej informacji</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="section1" class="section bg-primary min-vh-100">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>iPhone 15 <br>
+                    Cena: 3799 PLN
+                </h3>
+                <img src="iphone15.jpg" alt="Iphone 15"  class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <h3>iPhone 15 Pro <br>
+                    Cena: 4799 PLN</h3>
+                <img src="iphone15pro.jpg" alt="Iphone 15 pro"  class="img-fluid rounded">
+            </div>
+            <div class="col-md-4">
+                <h3>iPhone 15 Pro Max<br>
+                    Cena: 5199 PLN</h3>
+                <img src="iphone15promax.jpg" alt="Iphone 15 pro max"  class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section2" class="section bg-secondary min-vh-100">
+    <div class="container">
+        <h1>Sekcja 2</h1>
+        <p>To jest druga sekcja</p>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%"></div>
+      </div>
+    </div>
+</section>
+
+<section id="section3" class="section bg-info min-vh-100">
+    <div class="container">
+        <h1>Sekcja 3</h1>
+        <p>To jest trzecia sekcja</p>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            Alert!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="section4" class="section bg-dark min-vh-100">
+    <div class="container">
+        <h1>Sekcja 4</h1>
+        <p>To jest czwarta sekcja</p>
+        <div class="spinner-border text-info"></div>
+    </div>
+</section>
+
+<section id="section5" class="section bg-light min-vh-100">
+    <div class="container">
+        <button type="button" class="btn btn-secondary" data-toggle="popover" title="Popover Title" data-content="Czy wiesz, że apple jest najwięcej wartą firmą na świecie?">Pokaż Popover</button> 
+        <h4><a href="https://www.apple.com/" target="_blank">Oficjalna strona apple</a></h4>
+        <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Coś!">
+            Najedź na mnie
+          </button>
+    </div>
+    
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    </script>
+</body>
+</html>

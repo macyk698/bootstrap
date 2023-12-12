@@ -1,0 +1,85 @@
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #333333;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.5rem;
+}
+
+.section a.btn {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.section a.btn:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    text-align: center;
+    width: 400px;
+    margin: 0 30px 30px;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.image-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#section5 {color:black;}
